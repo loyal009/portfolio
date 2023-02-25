@@ -1,6 +1,7 @@
 body {
   background-color: #0d21a1;
   color: #edf2f4;
+  padding: 0.8em;
 }
 nav {
   font-size: 1.175rem;
@@ -50,13 +51,56 @@ a {
   color: #edf2f4;
   /* border: 2px solid black; */
 }
-h1 {
+.hero_text h1 {
   text-align: center;
   /* border: 2px solid black; */
   margin-top: 0;
 }
 .social {
   display: none;
+}
+
+.projects h3 {
+  font-family: "Clash Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.portfolio_images {
+  width: 100%;
+}
+
+.what_i_do {
+  font-family: Inter, sans-serif;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.bullet {
+  list-style-type: "\2014";
+  color: #bcbab8;
+  text-transform: initial;
+}
+
+.bullet li {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  margin-left: 3em;
+}
+
+.contact_me {
+  font-family: Inter, sans-serif;
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+.email {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -113,12 +157,14 @@ h1 {
   .github {
     display: flex;
     gap: 6px;
-    opacity: 0.7;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
   }
   p {
     font-family: Inter, sans-serif;
-    color: #edede9;
+    color: #e5e5e5;
   }
+
   .twitter:hover,
   .github:hover {
     opacity: 1;
