@@ -64,7 +64,9 @@ a {
 .social {
   display: none;
 }
-
+.projects {
+  margin-top: 8em;
+}
 .projects h3 {
   font-family: "Clash Grotesk", sans-serif;
   text-transform: uppercase;
