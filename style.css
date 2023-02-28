@@ -164,7 +164,9 @@ input::placeholder {
 }
 input:focus {
   outline: none;
+  border-bottom: 1px solid white;
 }
+
 .btn-submit {
   margin-top: 4em;
   width: 100%;
@@ -182,14 +184,24 @@ footer {
   text-transform: uppercase;
   font-family: Inter, sans-serif;
   font-size: 1.2rem;
-  color: rgb(255, 255, 255, 0.7);
 }
 footer p {
-  margin-top: 1 em;
-  margin-bottom: 2em;
+  color: rgb(255, 255, 255, 0.7);
+  /* margin-top: 1 em;
+  margin-bottom: 2em; */
 }
 .contact_footer {
   color: rgb(255, 255, 255, 1);
+}
+.social_bottom {
+  display: none;
+}
+.social_text {
+  color: rgb(255, 255, 255, 1);
+}
+.copyright {
+  font-size: 1rem;
+  text-transform: initial;
 }
 @media (min-width: 768px) {
   nav {
@@ -213,6 +225,8 @@ footer p {
     display: inline;
     /* border: 2px solid black; */
     align-self: center;
+    position: fixed;
+    right: 45%;
   }
   .item3 {
     padding-right: 3.75em;
@@ -220,6 +234,9 @@ footer p {
     gap: 1.45em;
     justify-content: right;
     /* border: 2px solid black; */
+  }
+  .hero_text h1 {
+    margin-top: 0.8em;
   }
   .hero_text {
     margin: 0.3em auto 3em auto;
@@ -232,19 +249,20 @@ footer p {
   }
   .social {
     display: flex;
-    justify-content: center;
+
+    /* justify-content: center; */
 
     position: absolute;
     top: 300px;
     left: -40px;
-    gap: 20px;
+    gap: 2em;
     transform: rotate(270deg);
     /* border: 2px solid black; */
   }
   .twitter,
   .github {
     display: flex;
-    gap: 6px;
+    gap: 0.4em;
     opacity: 0.6;
     transition: opacity 0.2s ease;
   }
@@ -257,5 +275,80 @@ footer p {
   .github:hover {
     opacity: 1;
     cursor: pointer;
+  }
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin-left: 10em;
+    overflow-x: auto;
+  }
+  .portfolio_images {
+    width: 70%;
+  }
+  .portfolio::-webkit-scrollbar {
+    display: none;
+  }
+  .what_i_do {
+    margin-left: 8em;
+    width: 600px;
+  }
+  .skill {
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+    /* width: 80%;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+  /* .my_services {
+    display: flex;
+    margin-left: 4em;
+  }
+  .what_i_do,
+  .skill1,
+  .skill2 {
+    flex-basis: 0;
+    flex-grow: 1;
+    align-self: center;
+  } */
+  .contact_me {
+    margin-top: 6em;
+    margin-left: 8em;
+    width: 600px;
+  }
+  .form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line {
+    border-bottom: 1px solid #3b62a9;
+    margin-top: 6em;
+  }
+  footer {
+    margin-top: 0.8em;
+    width: 87vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_items,
+  .footer_items2 {
+    /* margin-top: 0; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    color: rgb(255, 255, 255, 1);
+  }
+
+  .footer_items2 p {
+    text-transform: initial;
+    font-size: 0.8rem;
+  }
+  .social_bottom {
+    display: flex;
+    gap: 1em;
   }
 }
