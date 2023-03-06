@@ -68,17 +68,18 @@ a {
 }
 .projects {
   margin-top: 8em;
+  /* margin-left: 4em; */
 }
 .projects h3 {
   font-family: "Clash Grotesk", sans-serif;
   text-transform: uppercase;
-  margin-left: 4em;
 }
 .portfolio {
   display: flex;
   flex-direction: column;
   /* gap: 1em; */
   align-items: center;
+  /* justify-content: center; */
 }
 .portfolio_images {
   width: 100%;
@@ -286,11 +287,17 @@ footer p {
     opacity: 1;
     cursor: pointer;
   }
+  .projects {
+    margin-left: 4em;
+  }
+  .projects h3 {
+    margin-bottom: 2em;
+  }
   .portfolio {
     display: flex;
     flex-direction: row;
     gap: 4em;
-    margin-left: 10em;
+    /* margin-left: 10em; */
     overflow-x: auto;
   }
   .portfolio_images {
@@ -342,7 +349,12 @@ footer p {
     margin-left: auto;
     margin-right: auto;
   }
-  .footer_items,
+  .footer_items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+  }
+
   .footer_items2 {
     /* margin-top: 0; */
     display: flex;
