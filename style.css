@@ -252,7 +252,8 @@ footer p {
     line-height: 0.92;
   }
   .hero_text h1 {
-    font-size: 8rem;
+    /* font-size: 8rem; */
+    font-size: 10vw;
   }
   .social_images {
     width: 20px;
